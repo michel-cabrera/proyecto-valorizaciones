@@ -72,14 +72,14 @@ pipeline {
     post {
         success {
             emailext(
-                to: 'gianella.vega@hocplc.com',
+                to: 'michelcabrerayauri998@gmail.com',
                 subject: "OK - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: "El pipeline terminó correctamente.\nCommit: ${env.GIT_COMMIT}\nDetalle: ${env.BUILD_URL}"
             )
         }
         failure {
             emailext(
-                to: 'gianella.vega@hocplc.com',
+                to: 'michelcabrerayauri998@gmail.com',
                 subject: "FALLÓ - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: "El pipeline falló.\nCommit: ${env.GIT_COMMIT}\nRevisa la consola:\n${env.BUILD_URL}console"
             )
