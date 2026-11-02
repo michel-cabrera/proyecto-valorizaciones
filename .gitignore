@@ -1,0 +1,17 @@
+# Entorno virtual (lo crea el pipeline)
+.venv/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Resultados que se generan al ejecutar (no se versionan)
+*.db
+data/salida/
+BD_VALORIZACIONES.xlsx
+HISTORIAL_PEDIDOS.xlsx
+SIMULACION_PEDIDOS.csv
+
+# Archivos de macOS
+.DS_Store
